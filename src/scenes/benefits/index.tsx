@@ -14,14 +14,34 @@ type Props = {
 }
 
 
-const container = {
-     hidden: { opacity: 0},
-     visible: {
-        opacity: 1,
-        transition: { staggerChildren: 0.2 ,  staggerDirection:1 , duration:1 }
-    }
+// const container = {
+    
+//     hidden: {
+//     opacity: 0,
+//     transition: {
+//       when: "afterChildren",
+//     }
+//     },
+
+//      visible: {
+//     opacity: 1,
+//     transition: {
+//       when: "beforeChildren",
+//       staggerChildren: 0.3,
+//     },
+//   },
+
+  
+
+
      
-}
+
+    //  visible: {
+    //     opacity: 1,
+    //     transition: { staggerChildren: 0.2 ,  staggerDirection:1 , duration:1 }
+    // }
+     
+// }
 
 const benefits: Array<BenefitType> = [
 
@@ -83,11 +103,14 @@ const Benefits = ({setSelectedPage }: Props) => {
    {/* Benefits */}
 
     <motion.div 
-    className="md:flex mt-5 items-center justify-between gap-8 "
-    initial="hidden"
-    whileInView="visible"
-    viewport={{once: true, amount: 0.5}}
-    variants={container}
+    className="md:flex mt-5 items-center md:justify-between gap-10 "
+    // initial="hidden"
+    // whileInView="visible"
+    // viewport={{once: true, amount: 0.5}}
+    // variants={{
+    //           hidden: { opacity: 0, x: 50},
+    //           visible: { opacity: 1, x: 0} 
+    //         }}
     
     >
    {benefits.map((benefit: BenefitType)=> (

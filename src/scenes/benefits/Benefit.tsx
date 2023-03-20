@@ -25,7 +25,7 @@ const Benefit = ({icon, title, desc, setSelectedPage}: Props) => {
   return (
     
     < motion.div 
-    className="mt-5 rounded-md border-2 border-gray-100 px-5 py-16 text-center"
+    className="mt-5 rounded-md border-2 border-gray-100 px-5 py-2 text-center"
     variants={childVariant}
     >
         
